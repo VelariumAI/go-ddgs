@@ -48,3 +48,17 @@ func TestRunDispatchCommands(t *testing.T) {
 		t.Fatalf("doctor code=%d want 0", code)
 	}
 }
+
+func TestRunSearchTextOutputPath(t *testing.T) {
+	srv := newDDGTestServer()
+	defer srv.Close()
+
+	t.Setenv("GODDGS_DDG_BASE", srv.URL)
+	t.Setenv("GODDGS_LINKS_BASE", srv.URL)
+	t.Setenv("GODDGS_HTML_BASE", srv.URL)
+	t.Setenv("GODDGS_TIMEOUT", "1s")
+
+	if code := runSearch([]string{"--q", "golang"}); code != 0 {
+		t.Fatalf("search text output code=%d want 0", code)
+	}
+}
