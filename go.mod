@@ -1,4 +1,4 @@
-module github.com/velariumai/goddgs
+module github.com/velariumai/go-ddgs
 
 go 1.24
 

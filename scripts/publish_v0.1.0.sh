@@ -4,7 +4,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 VERSION="v0.1.0"
-REMOTE_URL="git@github.com:velariumai/goddgs.git"
+REMOTE_URL="git@github.com:VelariumAI/go-ddgs.git"
 
 if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   git init
@@ -29,6 +29,6 @@ git branch -M main
 git push -u origin main --tags
 
 gh release create "$VERSION" \
-  --repo velariumai/goddgs \
+  --repo velariumai/go-ddgs \
   --title "$VERSION" \
   --notes-file docs/releases/v0.1.0.md

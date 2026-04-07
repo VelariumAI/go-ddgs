@@ -38,7 +38,7 @@ git push origin vX.Y.Z
 - Validate install:
 
 ```bash
-go get github.com/velariumai/goddgs@vX.Y.Z
+go get github.com/velariumai/go-ddgs@vX.Y.Z
 ```
 
 - Perform smoke test from a clean module cache.

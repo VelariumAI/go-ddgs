@@ -1,10 +1,10 @@
-# goddgs
-[![CI](https://github.com/velariumai/goddgs/actions/workflows/ci.yml/badge.svg)](https://github.com/velariumai/goddgs/actions/workflows/ci.yml)
-[![Release](https://github.com/velariumai/goddgs/actions/workflows/release.yml/badge.svg)](https://github.com/velariumai/goddgs/actions/workflows/release.yml)
-[![Go Reference](https://pkg.go.dev/badge/github.com/velariumai/goddgs.svg)](https://pkg.go.dev/github.com/velariumai/goddgs)
-[![Go Report Card](https://goreportcard.com/badge/github.com/velariumai/goddgs)](https://goreportcard.com/report/github.com/velariumai/goddgs)
+# go-ddgs
+[![CI](https://github.com/velariumai/go-ddgs/actions/workflows/ci.yml/badge.svg)](https://github.com/velariumai/go-ddgs/actions/workflows/ci.yml)
+[![Release](https://github.com/velariumai/go-ddgs/actions/workflows/release.yml/badge.svg)](https://github.com/velariumai/go-ddgs/actions/workflows/release.yml)
+[![Go Reference](https://pkg.go.dev/badge/github.com/velariumai/go-ddgs.svg)](https://pkg.go.dev/github.com/velariumai/go-ddgs)
+[![Go Report Card](https://goreportcard.com/badge/github.com/velariumai/go-ddgs)](https://goreportcard.com/report/github.com/velariumai/go-ddgs)
 
-`goddgs` is a production-oriented Go web search toolkit with:
+`go-ddgs` is a production-oriented Go web search toolkit with:
 
 - DDG-first search without requiring API keys.
 - Typed provider failover engine (`ddg`, `brave`, `tavily`, `serpapi`).
@@ -16,7 +16,7 @@
 ## Install
 
 ```bash
-go get github.com/velariumai/goddgs
+go get github.com/velariumai/go-ddgs
 ```
 
 ## Compatibility
@@ -25,7 +25,7 @@ go get github.com/velariumai/goddgs
 
 ## What This Project Does
 
-`goddgs` is designed for resilient search in real-world environments where providers can fail, throttle, or challenge traffic.
+`go-ddgs` is designed for resilient search in real-world environments where providers can fail, throttle, or challenge traffic.
 
 It includes:
 
@@ -49,7 +49,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/velariumai/goddgs"
+	goddgs "github.com/velariumai/go-ddgs"
 )
 
 func main() {

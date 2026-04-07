@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v0.2.0 - 2026-04-07
+
+- Renamed project repository to `go-ddgs`.
+- Updated Go module path to `github.com/velariumai/go-ddgs` (breaking import path change).
+- Updated documentation, badges, scripts, and examples for the new naming.
+
 ## v0.1.3 - 2026-04-07
 
 - Added transport-level decompression for `gzip`, `br`, and `zstd`.

@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"github.com/velariumai/goddgs"
+	"github.com/velariumai/go-ddgs"
 )
 
 var serveFn = func(s *http.Server) error { return s.ListenAndServe() }
